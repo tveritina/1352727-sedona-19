@@ -51,13 +51,24 @@
         <fieldset class="form-contacts review-form__contacts">
           <legend class="review-form__legend">Контактная информация:</legend>
           <label class="form-contacts__lable" for="contacts-phone">Контактный телефон:</label>
-          <input class="form-contacts__input" type="tel" name="contacts-phone" id="contacts-phone">
+          <input class="form-contacts__input" type="tel" name="contacts-phone" id="contacts-phone"
+            placeholder="Введите телефон">
           <label class="form-contacts__lable" for="contacts-email">Электронная почта:</label>
-          <input class="form-contacts__input" type="email" name="contacts-email" id="contacts-email">
+          <input class="form-contacts__input" type="email" name="contacts-email" id="contacts-email"
+            placeholder="Введите e-mail">
         </fieldset>
 
         <fieldset class="form-impression review-form__impression">
           <legend class="review-form__legend">Ваше общее впечатление:</legend>
+          <label class="form-impression__lable">
+            <input class="form-impression__input" type="radio" name="form-impression-radio" value="positive" checked>Скорее положительное
+          </label>
+          <label class="form-impression__lable">
+            <input class="form-impression__input" type="radio" name="form-impression-radio" value="negative">Скорее отрицательное
+          </label>
+          <label class="form-impression__lable">
+            <input class="form-impression__input" type="radio" name="form-impression-radio" value="other">Затрудняюсь ответить
+          </label>
         </fieldset>
 
         <fieldset class="form-places review-form__places">
