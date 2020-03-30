@@ -38,10 +38,14 @@
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="review-form feedback__form" action="https://echo.htmlacademy.ru" method="POST">
-
         <fieldset class="form-name review-form__name">
           <legend class="review-form__legend">Представьтесь:</legend>
-
+          <label class="form-name__lable" for="firstname">Имя*:</label>
+          <input class="form-name__input" type="text" name="firstname" id="firstname" required>
+          <label class="form-name__lable" for="lastname">Фамилия*:</label>
+          <input class="form-name__input" type="text" name="lastname" id="lastname" required>
+          <label class="form-name__lable" for="middlename">Отчество:</label>
+          <input class="form-name__input" type="text" name="middlename" id="middlename">
         </fieldset>
 
         <fieldset class="form-contacts review-form__contacts">
