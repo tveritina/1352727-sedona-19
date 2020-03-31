@@ -25,7 +25,10 @@
   <main>
     <section>
       <h2 class="visually-hidden">Добро пожаловать</h2>
-      <picture class="background background--slogan-common"></picture>
+      <picture>
+        <img class="background background--slogan-common" srcset="https://via.placeholder.com/150x150"
+          alt="Фото Седоны">
+      </picture>
     </section>
     <section class="page-description">
       <h2 class="page-description__header">фото и видео</h2>
@@ -58,6 +61,16 @@
         <p class="photo__author">Автор фото: Антон</p>
         <span class="photo__likes">254</span>
       </div>
+    </section>
+    <section class="video-presentation">
+      <h2 class="video-presentation__header">все еще сомневаетесь?</h2>
+      <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+        очередной раз!</p>
+      <video class="video-presentation__video" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+      </video>
     </section>
   </main>
   <footer class="page-footer">
