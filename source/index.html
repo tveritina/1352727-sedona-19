@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -11,21 +13,23 @@
   <header class="page-header">
     <button class="burger-button page-header__burger-button" type="button" aria-label="Открыть меню"></button>
     <nav class="navigation page-header__navigation">
-      <ul>
+      <ul class="navigation__list">
         <li class="navigation__item"><a href="#">Главная</a></li>
         <li class="navigation__item"><a href="photo.html">Фото и видео</a></li>
         <li class="navigation__item"><a href="form.html">Форма отзыва</a></li>
         <li class="navigation__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
       </ul>
     </nav>
-    <button type="button" class="close-button page-header__close-button"></button>
-    <a class="logo page-header__logo"><img src="https://via.placeholder.com/150x150" alt="Логотип"></a>
+    <button type="button" class="close-button page-header__close-button">Закрыть</button>
+    <a class="logo page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83"></a>
   </header>
   <main>
     <section>
       <h2 class="visually-hidden">Добро пожаловать</h2>
-      <picture>
-        <img class="background background--slogan-index" srcset="https://via.placeholder.com/150x150" alt="Фото Седоны">
+      <picture class="background">
+        <div class="background__image">
+          <img class="background__slogan" src="img/text-sedona-index.svg" width="281" height="214">
+        </div>
       </picture>
     </section>
     <section class="page-description">
@@ -39,19 +43,19 @@
           <h3 class="point-reason__header">настоящий городок</h3>
           <p class="point-reason__number">— №1 —</p>
           <p class="point-reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="point-reason__image" src="https://via.placeholder.com/150x150" alt="Настоящий городок">
+          <img class="point-reason__image" src="img/main-city-mobile@1x.jpg" height="260" width="320" alt="Настоящий городок">
           <ul class="advantages point-reason__details">
             <li class="advantages__item">
-              <h4 class="advantages__header advantages__header--home"></h4>
-              <p class="advantages__text"></p>
+              <h4 class="advantages__header advantages__header--home">Жилье</h4>
+              <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advantages__item">
-              <h4 class="advantages__header advantages__header--souveniers"></h4>
-              <p class="advantages__text"></p>
+              <h4 class="advantages__header advantages__header--souveniers">Сувениры</h4>
+              <p class="advantages__text">Не только китайского, но и местного производства!</p>
             </li>
             <li class="advantages__item">
-              <h4 class="advantages__header advantages__header--eat"></h4>
-              <p class="advantages__text"></p>
+              <h4 class="advantages__header advantages__header--eat">Еда</h4>
+              <p class="advantages__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </li>
@@ -59,7 +63,7 @@
           <h3 class="point-reason__header">там есть мост дьявола</h3>
           <p class="point-reason__number">— №2 —</p>
           <p class="point-reason__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-          <img class="point-reason__image" src="https://via.placeholder.com/150x150" alt="Мост дьявола">
+          <img class="point-reason__image" src="img/main-bridge-mobile@1x.jpg" height="260" width="320" alt="Мост дьявола">
         </li>
         <li class="point-reason reasons__item reasons__item--grey">
           <h3 class="point-reason__header">небольшая площадь</h3>
@@ -82,8 +86,8 @@
       <h2 class="find-hotel__header">заинтересовались?</h2>
       <p class="find-hotel__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
-      <button type="button" class="find-hotel__button">найти гостиницу</button>
-      <img class="find-hotel__map" src="https://via.placeholder.com/150x150" alt="Карта">
+      <button type="button" class="button find-hotel__button">найти гостиницу</button>
+      <img class="find-hotel__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
     </section>
   </main>
   <footer class="page-footer">
