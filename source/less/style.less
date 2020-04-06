@@ -22,9 +22,29 @@
 @import "blocks/form-places.less";
 @import "variables.less";
 @import "blocks/form-emotions.less";
+@import "blocks/page-header.less";
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: @font-PTSans;
   color: @color-black;
   min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    min-width: @desktop-width;
+  }
 }
