@@ -25,97 +25,104 @@
     <a class="logo page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83"></a>
   </header>
   <main>
-    <section>
-      <h2 class="visually-hidden">Добро пожаловать</h2>
-      <picture class="background">
-        <div class="background__image">
-          <img class="background__slogan" src="img/text-sedona.svg" width="229" height="39">
-        </div>
-      </picture>
-    </section>
-    <section class="page-description">
-      <h2 class="page-description__header">оставьте свой отзыв помогите нашим отелям стать лучше!</h2>
-      <p class="page-description__text">оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </section>
-    <section class="feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="review-form feedback__form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="form-name review-form__name">
-          <legend class="review-form__legend">Представьтесь:</legend>
-          <p class="form-name__field">
-            <label class="form-name__lable" for="firstname">Имя*:</label>
-            <input class="form-name__input" type="text" name="firstname" id="firstname" required>
-          </p>
-          <p class="form-name__field">
-            <label class="form-name__lable" for="lastname">Фамилия*:</label>
-            <input class="form-name__input" type="text" name="lastname" id="lastname" required>
-          </p>
-          <p class="form-name__field">
-            <label class="form-name__lable" for="middlename">Отчество:</label>
-            <input class="form-name__input" type="text" name="middlename" id="middlename">
-          </p>
-        </fieldset>
-        <fieldset class="form-contacts review-form__contacts">
-          <legend class="review-form__legend">Контактная информация:</legend>
-          <p class="form-contacts__field">
-            <label class="form-contacts__lable" for="contacts-phone">Контактный телефон:</label>
-            <input class="form-contacts__input" type="tel" name="contacts-phone" id="contacts-phone"
-              placeholder="Введите телефон" pattern="7 [0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="14" required>
-          </p>
-          <p class="form-contacts__field">
-            <label class="form-contacts__lable" for="contacts-email">Электронная почта:</label>
-            <input class="form-contacts__input" type="email" name="contacts-email" id="contacts-email"
-              placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-          </p>
-        </fieldset>
-        <fieldset class="form-impression review-form__impression">
-          <legend class="review-form__legend">Ваше общее впечатление:</legend>
-          <ul class="form-impression__list">
-            <li class="form-impression__list-item">
-              <input class="form-impression__input" type="radio" id="positive" name="form-impression-radio"
-                value="positive" checked>
-              <label class="form-impression__lable" for="positive">Скорее положительное</label>
-            </li>
-            <li class="form-impression__list-item">
-              <input class="form-impression__input" type="radio" id="negative" name="form-impression-radio"
-                value="negative">
-              <label class="form-impression__lable" for="negative">Скорее отрицательное</label>
-            </li>
-            <li class="form-impression__list-item">
-              <input class="form-impression__input" type="radio" id="other" name="form-impression-radio" value="other">
-              <label class="form-impression__lable" for="other">Затрудняюсь ответить</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-places review-form__places">
-          <legend class="review-form__legend">Посещенные достопримечательности:</legend>
-          <ul class="form-places__list">
-            <li class="form-places__list-item">
-              <input class="form-places__input" type="checkbox" id="diablo-bridge" name="diablo-bridge" checked>
-              <label class="form-places__lable" for="diablo-bridge">Мост Дьявола</label>
-            </li>
-            <li class="form-places__list-item">
-              <input class="form-places__input" type="checkbox" id="mountain" name="mountain" checked>
-              <label class="form-places__lable" for="mountain">Гора-Колокол</label>
-            </li>
-            <li class="form-places__list-item">
-              <input class="form-places__input" type="checkbox" id="park" name="park" checked>
-              <label class="form-places__lable" for="park">Слайд-парк</label>
-            </li>
-            <li class="form-places__list-item">
-              <input class="form-places__input" type="checkbox" id="red-mountains" name="red-mountains">
-              <label class="form-places__lable" for="red-mountains">Красные скалы</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-emotions review-form__emotions">
-          <legend class="review-form__legend">Опишите свои эмоции:</legend>
-          <textarea class="form-emotions__text" name="emotions" cols="30" rows="10"
-            placeholder="Опишите все свои восторги"></textarea>
-        </fieldset>
-        <button type="submit" class="button review-form__button">Отправить отзыв</button>
-      </form>
-    </section>
+    <div class="main-container">
+      <section>
+        <h2 class="visually-hidden">Добро пожаловать</h2>
+        <picture class="background">
+          <div class="background__image">
+            <img class="background__slogan" src="img/text-sedona.svg" width="229" height="39">
+          </div>
+        </picture>
+      </section>
+      <section class="page-description">
+        <h2 class="page-description__header">оставьте свой отзыв помогите нашим отелям стать лучше!</h2>
+        <p class="page-description__text">оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="review-form feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form-name review-form__name">
+            <legend class="review-form__legend">Представьтесь:</legend>
+            <p class="form-name__field">
+              <label class="form-name__lable" for="firstname">Имя*:</label>
+              <input class="form-name__input" type="text" name="firstname" id="firstname" required>
+            </p>
+            <p class="form-name__field">
+              <label class="form-name__lable" for="lastname">Фамилия*:</label>
+              <input class="form-name__input" type="text" name="lastname" id="lastname" required>
+            </p>
+            <p class="form-name__field">
+              <label class="form-name__lable" for="middlename">Отчество:</label>
+              <input class="form-name__input" type="text" name="middlename" id="middlename">
+            </p>
+          </fieldset>
+          <hr>
+          <fieldset class="form-contacts review-form__contacts">
+            <legend class="review-form__legend">Контактная информация:</legend>
+            <p class="form-contacts__field">
+              <label class="form-contacts__lable" for="contacts-phone">Контактный телефон:</label>
+              <input class="form-contacts__input" type="tel" name="contacts-phone" id="contacts-phone"
+                placeholder="Введите телефон" pattern="7 [0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="14" required>
+            </p>
+            <p class="form-contacts__field">
+              <label class="form-contacts__lable" for="contacts-email">Электронная почта:</label>
+              <input class="form-contacts__input" type="email" name="contacts-email" id="contacts-email"
+                placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </p>
+          </fieldset>
+          <hr>
+          <fieldset class="form-impression review-form__impression">
+            <legend class="review-form__legend">Ваше общее впечатление:</legend>
+            <ul class="form-impression__list">
+              <li class="form-impression__list-item">
+                <input class="form-impression__input" type="radio" id="positive" name="form-impression-radio"
+                  value="positive" checked>
+                <label class="form-impression__lable" for="positive">Скорее положительное</label>
+              </li>
+              <li class="form-impression__list-item">
+                <input class="form-impression__input" type="radio" id="negative" name="form-impression-radio"
+                  value="negative">
+                <label class="form-impression__lable" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="form-impression__list-item">
+                <input class="form-impression__input" type="radio" id="other" name="form-impression-radio"
+                  value="other">
+                <label class="form-impression__lable" for="other">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <hr>
+          <fieldset class="form-places review-form__places">
+            <legend class="review-form__legend">Посещенные достопримечательности:</legend>
+            <ul class="form-places__list">
+              <li class="form-places__list-item">
+                <input class="form-places__input" type="checkbox" id="diablo-bridge" name="diablo-bridge" checked>
+                <label class="form-places__lable" for="diablo-bridge">Мост Дьявола</label>
+              </li>
+              <li class="form-places__list-item">
+                <input class="form-places__input" type="checkbox" id="mountain" name="mountain" checked>
+                <label class="form-places__lable" for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="form-places__list-item">
+                <input class="form-places__input" type="checkbox" id="park" name="park" checked>
+                <label class="form-places__lable" for="park">Слайд-парк</label>
+              </li>
+              <li class="form-places__list-item">
+                <input class="form-places__input" type="checkbox" id="red-mountains" name="red-mountains">
+                <label class="form-places__lable" for="red-mountains">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <hr>
+          <fieldset class="form-emotions review-form__emotions">
+            <legend class="review-form__legend">Опишите свои эмоции:</legend>
+            <textarea class="form-emotions__text" name="emotions" cols="30" rows="10"
+              placeholder="Опишите все свои восторги"></textarea>
+          </fieldset>
+          <button type="submit" class="button review-form__button">Отправить отзыв</button>
+        </form>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <p class="page-footer__hashtag">#visitsedona</p>
