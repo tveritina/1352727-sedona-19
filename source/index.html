@@ -12,7 +12,8 @@
 <body>
   <h1 class="visually-hidden">Седона. Главная</h1>
   <header class="page-header">
-    <button class="burger-button page-header__burger-button" type="button" aria-label="Открыть меню"></button>
+    <button class="burger-button page-header__burger-button visually-hidden" type="button"
+      aria-label="Открыть меню"></button>
     <nav class="navigation page-header__navigation">
       <ul class="navigation__list">
         <li class="navigation__item"><a href="#">Главная</a></li>
@@ -21,75 +22,79 @@
         <li class="navigation__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
       </ul>
     </nav>
-    <button type="button" class="close-button page-header__close-button">Закрыть</button>
+    <button type="button" class="close-button page-header__close-button visually-hidden">Закрыть</button>
     <a class="logo page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83"></a>
   </header>
   <main>
-    <section>
-      <h2 class="visually-hidden">Добро пожаловать</h2>
-      <picture class="background">
-        <div class="background__image">
-          <img class="background__slogan" src="img/text-sedona-index.svg" width="281" height="214">
-        </div>
-      </picture>
-    </section>
-    <section class="page-description">
-      <h2 class="page-description__header">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
-      <p class="page-description__text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-    </section>
-    <section class="reasons">
-      <h2 class="visually-hidden">Преимущества городка Седона</h2>
-      <ol>
-        <li class="point-reason reasons__item reasons__item--blue">
-          <h3 class="point-reason__header">настоящий городок</h3>
-          <p class="point-reason__number">— №1 —</p>
-          <p class="point-reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="point-reason__image" src="img/main-city-mobile@1x.jpg" height="260" width="320" alt="Настоящий городок">
-          <ul class="advantages point-reason__details">
-            <li class="advantages__item">
-              <h4 class="advantages__header advantages__header--home">Жилье</h4>
-              <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li class="advantages__item">
-              <h4 class="advantages__header advantages__header--souveniers">Сувениры</h4>
-              <p class="advantages__text">Не только китайского, но и местного производства!</p>
-            </li>
-            <li class="advantages__item">
-              <h4 class="advantages__header advantages__header--eat">Еда</h4>
-              <p class="advantages__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-          </ul>
-        </li>
-        <li class="point-reason reasons__item reasons__item--blue">
-          <h3 class="point-reason__header">там есть мост дьявола</h3>
-          <p class="point-reason__number">— №2 —</p>
-          <p class="point-reason__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-          <img class="point-reason__image" src="img/main-bridge-mobile@1x.jpg" height="260" width="320" alt="Мост дьявола">
-        </li>
-        <li class="point-reason reasons__item reasons__item--grey">
-          <h3 class="point-reason__header">небольшая площадь</h3>
-          <p class="point-reason__number">— №3 —</p>
-          <p class="point-reason__text">все интересные места находятся очень близко</p>
-        </li>
-        <li class="point-reason reasons__item reasons__item--grey">
-          <h3 class="point-reason__header">красивая дорога</h3>
-          <p class="point-reason__number">— №4 —</p>
-          <p class="point-reason__text">ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
-        <li class="point-reason reasons__item reasons__item--grey">
-          <h3 class="point-reason__header">мало туристов</h3>
-          <p class="point-reason__number">— №5 —</p>
-          <p class="point-reason__text">большинство едет в гранд каньон и толпится там</p>
-        </li>
-      </ol>
-    </section>
-    <section class="find-hotel">
-      <h2 class="find-hotel__header">заинтересовались?</h2>
-      <p class="find-hotel__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-        седоне</p>
-      <button type="button" class="button find-hotel__button">найти гостиницу</button>
-      <img class="find-hotel__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
-    </section>
+    <div class="main-container">
+      <section>
+        <h2 class="visually-hidden">Добро пожаловать</h2>
+        <picture class="background">
+          <div class="background__image">
+            <img class="background__slogan" src="img/text-sedona-index.svg" width="281" height="214">
+          </div>
+        </picture>
+      </section>
+      <section class="page-description">
+        <h2 class="page-description__header">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
+        <p class="page-description__text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      </section>
+      <section class="reasons">
+        <h2 class="visually-hidden">Преимущества городка Седона</h2>
+        <ol>
+          <li class="point-reason reasons__item reasons__item--blue">
+            <h3 class="point-reason__header">настоящий городок</h3>
+            <p class="point-reason__number">— №1 —</p>
+            <p class="point-reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="point-reason__image" src="img/main-city-mobile@1x.jpg" height="260" width="320"
+              alt="Настоящий городок">
+            <ul class="advantages point-reason__details">
+              <li class="advantages__item">
+                <h4 class="advantages__header advantages__header--home">Жилье</h4>
+                <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="advantages__item">
+                <h4 class="advantages__header advantages__header--souveniers">Сувениры</h4>
+                <p class="advantages__text">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="advantages__item">
+                <h4 class="advantages__header advantages__header--eat">Еда</h4>
+                <p class="advantages__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="point-reason reasons__item reasons__item--blue">
+            <h3 class="point-reason__header">там есть мост дьявола</h3>
+            <p class="point-reason__number">— №2 —</p>
+            <p class="point-reason__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+            <img class="point-reason__image" src="img/main-bridge-mobile@1x.jpg" height="260" width="320"
+              alt="Мост дьявола">
+          </li>
+          <li class="point-reason reasons__item reasons__item--grey">
+            <h3 class="point-reason__header">небольшая площадь</h3>
+            <p class="point-reason__number">— №3 —</p>
+            <p class="point-reason__text">все интересные места находятся очень близко</p>
+          </li>
+          <li class="point-reason reasons__item reasons__item--grey">
+            <h3 class="point-reason__header">красивая дорога</h3>
+            <p class="point-reason__number">— №4 —</p>
+            <p class="point-reason__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="point-reason reasons__item reasons__item--grey">
+            <h3 class="point-reason__header">мало туристов</h3>
+            <p class="point-reason__number">— №5 —</p>
+            <p class="point-reason__text">большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ol>
+      </section>
+      <section class="find-hotel">
+        <h2 class="find-hotel__header">заинтересовались?</h2>
+        <p class="find-hotel__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          седоне</p>
+        <button type="button" class="button find-hotel__button">найти гостиницу</button>
+        <img class="find-hotel__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <p class="page-footer__hashtag">#visitsedona</p>
