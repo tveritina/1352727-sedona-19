@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+.point-reason__image {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+}
+
 .point-reason__header {
   .block-header();
 }
@@ -13,4 +19,20 @@
 .point-reason__number,
 .point-reason__text {
   .block-text();
+}
+
+@media (min-width: @tablet-width) {
+  .point-reason {
+    min-height: 256px;
+  }
+
+  .point-reason__image {
+    width: 512px;
+    height: 256px;
+    background-image: url("../img/main-city-tablet@1x.jpg");
+  }
+
+  .point-reason__description {
+    max-width: 256px;
+  }
 }
