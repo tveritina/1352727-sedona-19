@@ -15,8 +15,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reasons__item:nth-child(1) {
+  .reasons__item:nth-child(1),
+  .reasons__item:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .reasons__item--width {
+    max-width: 256px;
   }
 }
