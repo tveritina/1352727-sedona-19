@@ -1,4 +1,26 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 233px;
+}
+
 .page-footer__hashtag {
   .block-header();
   font-size: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    min-width: @tablet-width;
+    min-height: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    min-width: @desktop-width;
+  }
 }

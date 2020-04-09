@@ -10,3 +10,22 @@
 .advantages__text {
   .block-text();
 }
+
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 330px;
+  }
+
+  .advantages__item {
+    max-width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    max-width: 400px;
+  }
+}
