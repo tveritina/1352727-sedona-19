@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .point-reason__description {
@@ -11,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-top: 40px;
 }
 
 .point-reason h3 {
@@ -37,6 +39,10 @@
 .point-reason__number,
 .point-reason__text {
   .block-text();
+}
+
+.point-reason__text-wrapper {
+  max-width: 280px;
 }
 
 @media (min-width: @tablet-width) {
