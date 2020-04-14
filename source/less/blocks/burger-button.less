@@ -1,6 +1,29 @@
 .burger-button {
   width: 23px;
   height: 21px;
+  position: absolute;
+  bottom: -40px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+
+  background-color: @color-white;
+
+  cursor: pointer;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 3px;
+
+    background-color: @color-blue;
+    box-shadow: 0 8px 0 0 @color-blue, 0 16px 0 0 @color-blue;
+  }
 }
 
 @media (min-width: @tablet-width) {

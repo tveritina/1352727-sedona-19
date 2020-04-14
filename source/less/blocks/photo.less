@@ -7,16 +7,71 @@
   font-weight: bold;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .photo__author {
   font-size: 14px;
   line-height: 24px;
   color: @color-grey;
+  margin: 0;
 }
 
 .photo__likes {
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
+  margin: 0;
+}
+
+.photo-icon-like {
+  width: 23px;
+  height: 21px;
+  opacity: 0.3;
+  margin-right: 14px;
+
+  path {
+    fill: @color-black;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    position: relative;
+    min-height: 347px;
+  }
+
+  .photo__likes {
+    position: absolute;
+    right: 5px;
+    bottom: 25px;
+  }
+
+  .photo__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: @color-grey-likes;
+    height: 80px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-icon-like {
+    path {
+      fill: @color-white;
+    }
+    opacity: 1;
+  }
+
+  .photo__footer {
+    bottom: 67px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @color-white;
+  }
+
+  .photo__author {
+    color: @color-white;
+  }
 }

@@ -4,7 +4,7 @@
 
 .form-places__list {
   list-style: none;
-  margin: o;
+  margin: 0;
   padding: 0;
 }
 
@@ -14,8 +14,24 @@
   line-height: 26px;
 }
 
+.form-places__list-item {
+  margin-bottom: 35px;
+}
+
 @media (min-width: @tablet-width) {
   .form-places {
     min-height: 300px;
+  }
+
+  .form-places__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .form-places__list-item:nth-child(odd) {
+    margin-right: 70px;
   }
 }

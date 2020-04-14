@@ -7,9 +7,30 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @color-grey;
+  margin-left: 22px;
+}
+
+.form-contacts__input {
+  height: 58px;
 }
 
 .form-contacts__input,
 .form-contacts__input::placeholder {
   .input-black-text();
+}
+
+@media (min-width: @tablet-width) {
+  .form-contacts {
+    min-height: 300px;
+  }
+
+  .form-contacts__input {
+    max-width: 100%;
+  }
+
+  .form-contacts__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

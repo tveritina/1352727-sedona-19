@@ -1,5 +1,18 @@
 .point-reason {
   min-height: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.point-reason__description {
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .point-reason h3 {
@@ -28,9 +41,14 @@
   .block-text();
 }
 
+.text-wrapper {
+  max-width: 280px;
+}
+
 @media (min-width: @tablet-width) {
   .point-reason {
     min-height: 256px;
+    flex-direction: row;
   }
 
   .point-reason__image {
@@ -48,6 +66,10 @@
 
   .point-reason__description {
     max-width: 256px;
+  }
+
+  .text-wrapper {
+    max-width: 560px;
   }
 }
 

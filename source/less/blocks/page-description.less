@@ -1,18 +1,29 @@
 .page-description {
-  min-height: 200px;
-}
-
-@media (min-width: @tablet-width) {
-  .page-description {
-    min-height: 206px;
-  }
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .page-description__header {
   .block-header();
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .page-description__text {
   .block-text();
   line-height: 26px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-description {
+    min-height: 206px;
+    max-width: 560px;
+  }
 }
