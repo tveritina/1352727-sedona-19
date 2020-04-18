@@ -51,7 +51,15 @@
     <section class="photo-gallery">
       <h2 class="visually-hidden">Фотогаллерея</h2>
       <div class="photo photo-gallery__item">
-        <img class="photo__item" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-sunset-desktop@2x.jpg 2x, img/photo-sunset-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-sunset-tablet@2x.jpg 2x, img/photo-sunset-tablet@1x.jpg 1x">
+          <source media="(min-width: 320px)"
+            srcset="img/photo-sunset-mobile@2x.jpg 2x, img/photo-sunset-mobile@1x.jpg 1x">
+          <img src="img/photo-sunset-desktop@2x.jpg" alt="Неродные просторы">
+        </picture>
         <div class="photo__footer">
           <h3 class="photo__header">Неродные просторы</h3>
           <p class="photo__author">Автор фото: Борис</p>
@@ -72,8 +80,15 @@
         </div>
       </div>
       <div class="photo photo-gallery__item">
-        <img class="photo__item" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
-          alt="Местная растительность">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-cactus-desktop@2x.jpg 2x, img/photo-cactus-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-cactus-tablet@2x.jpg 2x, img/photo-cactus-tablet@1x.jpg 1x">
+          <source media="(min-width: 320px)"
+            srcset="img/photo-cactus-mobile@2x.jpg 2x, img/photo-cactus-mobile@1x.jpg 1x">
+          <img src="img/photo-cactus-desktop@2x.jpg" alt="Местная растительность">
+        </picture>
         <div class="photo__footer">
           <h3 class="photo__header">Местная растительность</h3>
           <p class="photo__author">Автор фото: Сергей</p>
@@ -94,7 +109,15 @@
         </div>
       </div>
       <div class="photo photo-gallery__item">
-        <img class="photo__item" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на сервер">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-roads-desktop@2x.jpg 2x, img/photo-roads-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-roads-tablet@2x.jpg 2x, img/photo-roads-tablet@1x.jpg 1x">
+          <source media="(min-width: 320px)"
+            srcset="img/photo-roads-mobile@2x.jpg 2x, img/photo-roads-mobile@1x.jpg 1x">
+          <img src="img/photo-roads-desktop@2x.jpg" alt="Дорога на сервер">
+        </picture>
         <div class="photo__footer">
           <h3 class="photo__header">Дорога на север</h3>
           <p class="photo__author">Автор фото: Петр</p>
@@ -114,7 +137,15 @@
         </div>
       </div>
       <div class="photo photo-gallery__item">
-        <img class="photo__item" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-bridge-desktop@2x.jpg 2x, img/photo-bridge-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg 1x">
+          <source media="(min-width: 320px)"
+            srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg 1x">
+          <img src="img/photo-bridge-desktop@2x.jpg" alt="Мост дьявола">
+        </picture>
         <div class="photo__footer">
           <h3 class="photo__header">Мост дьявола</h3>
           <p class="photo__author">Автор фото: Антон</p>
