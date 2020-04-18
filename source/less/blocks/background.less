@@ -1,12 +1,21 @@
 .background {
   margin-bottom: 43px;
   position: relative;
+}
+
+.background--index {
   width: 320px;
   height: 389px;
 }
 
+.background--other {
+  width: 320px;
+  height: 158px;
+}
+
 .background__image {
   height: 100%;
+  width: 100%;
 }
 
 .background__slogan {
@@ -27,6 +36,14 @@
   height: 214px;
 }
 
+.background__slogan--other {
+  background-image: url("/img/text-sedona.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 229px;
+  height: 39px;
+}
+
 .background__triangle {
   position: absolute;
   background-image: url("/img/bg-intro-triangle-mobile.svg");
@@ -42,9 +59,19 @@
     height: 350px;
   }
 
-  .background {
+  .background__slogan--other {
+    width: 460px;
+    height: 80px;
+  }
+
+  .background--index {
     width: 768px;
     height: 518px;
+  }
+
+  .background--other {
+    width: 768px;
+    height: 290px;
   }
 
   .background__triangle {
@@ -61,5 +88,10 @@
   .background {
     width: 1200px;
     height: 518px;
+  }
+
+  .background--other {
+    width: 1200px;
+    height: 290px;
   }
 }
