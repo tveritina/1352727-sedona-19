@@ -5,11 +5,24 @@
   width: 320px;
 }
 
+.page-header__logotype {
+  height: 56px;
+  position: relative;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 56px;
     min-width: 768px;
     margin-bottom: 0;
+  }
+
+  .page-header__logotype {
+    position: absolute;
+    top: 0;
+    width: 108px;
+    height: 83px;
+    left: 43%;
   }
 }
 
@@ -17,6 +30,10 @@
   .page-header {
     min-height: 56px;
     min-width: 1200px;
+  }
+
+  .page-header__logotype {
+    left: 45.5%;
   }
 }
 
