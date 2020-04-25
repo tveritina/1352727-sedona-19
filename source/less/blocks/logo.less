@@ -2,6 +2,9 @@
   position: absolute;
   right: 34%;
   z-index: 1;
+  background: url("../img/logo-sedona-mobile.svg") no-repeat;
+  width: 102px;
+  height: 83px;
 }
 
 @media (min-width: @tablet-width) {
@@ -9,5 +12,14 @@
     width: 108px;
     height: 83px;
     right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+    width: 187px;
+    height: 97px;
+    background: url("../img/logo-sedona-desktop.svg") no-repeat;
+    right: -34%;
   }
 }
