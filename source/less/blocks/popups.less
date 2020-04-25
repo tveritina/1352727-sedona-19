@@ -17,6 +17,7 @@
 
 .popups--sent {
   min-height: 323px;
+  border-bottom: 100px solid @color-grey-form;
 }
 
 .popups__container {
@@ -57,6 +58,44 @@
   bottom: -80px;
 }
 
-.popups--sent {
-  border-bottom: 100px solid @color-grey-form;
+@media (min-width: @tablet-width) {
+  .popups--error {
+    max-width: 400px;
+    min-height: 347px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .popups--sent {
+    max-width: 640px;
+    min-height: 347px;
+    border-bottom: 146px solid @color-grey-form;
+  }
+
+  .popups__button-send {
+    width: 458px;
+    bottom: -110px;
+  }
+
+  .popups__button-ok {
+    width: 272px;
+  }
+
+  .popups__header {
+    .block-header();
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popups__text {
+    .block-text();
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .popups__container {
+    max-width: 470px;
+    min-height: 97px;
+  }
+
 }
