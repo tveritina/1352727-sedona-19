@@ -19,3 +19,36 @@
   color: @color-grey;
   text-transform: uppercase;
 }
+
+.video-presentation__video {
+  position: relative;
+  width: 321px;
+  height: 201px;
+}
+
+.video-presentation__controls-mobile {
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  height: 111px;
+  width: 280px;
+  border: 1px solid red;
+}
+
+.video-presentation__controls-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation__video {
+    width: 648px;
+    height: 499px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation__video {
+    width: 800px;
+    height: 500px;
+  }
+}
