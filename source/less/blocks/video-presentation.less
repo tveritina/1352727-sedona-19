@@ -26,7 +26,7 @@
   height: 201px;
 }
 
-.video-presentation__controls-mobile {
+.video-presentation__controls {
   position: absolute;
   bottom: -67px;
   left: 20px;
@@ -48,6 +48,16 @@
   background-color: @color-grey-form;
   width: 100%;
   height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  svg {
+    fill: #5c6870;
+  }
 }
 
 .video-presentation__range {
@@ -57,8 +67,8 @@
   background-color: @color-white;
 }
 
-.video-presentation__controls-tablet {
-  display: none;
+.video-presentation__icon-replay {
+  margin-right: 133px;
 }
 
 @media (min-width: @tablet-width) {
