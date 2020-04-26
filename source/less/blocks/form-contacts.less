@@ -16,6 +16,7 @@
 
 .form-contacts__input {
   height: 58px;
+  padding-left: 22px;
 }
 
 .form-contacts__lable::after {
@@ -46,6 +47,10 @@
 .form-contacts__input,
 .form-contacts__input::placeholder {
   .input-black-text();
+}
+
+.form-contacts__input:focus::placeholder {
+  color: transparent;
 }
 
 @media (min-width: @tablet-width) {
