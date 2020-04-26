@@ -12,10 +12,38 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .form-places__list-item {
   margin-bottom: 35px;
+}
+
+.form-places__input + .form-places__lable::before {
+  content: "";
+  position: absolute;
+  left: -65px;
+  top: -10px;
+  width: 46px;
+  height: 46px;
+  background-color: @color-grey-form;
+  border-radius: 10%;
+}
+
+.form-places__input:checked + .form-places__lable::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  width: 24px;
+  height: 16px;
+  border-radius: 50%;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (min-width: @tablet-width) {
