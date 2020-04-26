@@ -18,7 +18,7 @@
   height: 58px;
 }
 
-.form-contacts__lable::after{
+.form-contacts__lable::after {
   width: 58px;
   height: 59px;
   background-color: #e6e6e6;
@@ -27,6 +27,20 @@
   position: absolute;
   bottom: 1px;
   right: 0;
+}
+
+.form-contacts__lable--phone::after {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.form-contacts__lable--email::after {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 12px;
 }
 
 .form-contacts__input,
