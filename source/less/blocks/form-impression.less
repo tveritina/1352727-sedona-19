@@ -17,3 +17,36 @@
   font-weight: bold;
   line-height: 26px;
 }
+
+.form-impression__list-item {
+  padding-left: 55px;
+}
+
+.form-impression__lable {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-impression__input + .form-impression__lable::before {
+  content: "";
+  position: absolute;
+  left: -65px;
+  top: -10px;
+  width: 46px;
+  height: 46px;
+  background-color: @color-grey-form;
+  border-radius: 50%;
+}
+
+.form-impression__input:checked + .form-impression__lable::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  width: 16px;
+  height: 16px;
+  background-color: @color-grey;
+  border-radius: 50%;
+}
