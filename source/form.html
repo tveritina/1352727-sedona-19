@@ -48,11 +48,11 @@
           <legend class="review-form__legend">Представьтесь:</legend>
           <p class="form-name__field">
             <label class="form-name__lable" for="firstname">Имя*:</label>
-            <input class="form-name__input" type="text" name="firstname" id="firstname" required="">
+            <input class="form-name__input" type="text" name="firstname" id="firstname">
           </p>
           <p class="form-name__field">
             <label class="form-name__lable" for="lastname">Фамилия*:</label>
-            <input class="form-name__input" type="text" name="lastname" id="lastname" required="">
+            <input class="form-name__input" type="text" name="lastname" id="lastname">
           </p>
           <p class="form-name__field">
             <label class="form-name__lable" for="middlename">Отчество:</label>
@@ -65,13 +65,13 @@
             <label class="form-contacts__lable form-contacts__lable--phone" for="contacts-phone">Контактный
               телефон*:</label>
             <input class="form-contacts__input" type="tel" name="contacts-phone" id="contacts-phone"
-              placeholder="Введите телефон" pattern="7 [0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="14" required="">
+              placeholder="Введите телефон" pattern="[0-9]{11}" maxlength="11">
           </p>
           <p class="form-contacts__field">
             <label class="form-contacts__lable form-contacts__lable--email" for="contacts-email">Электронная
               почта*:</label>
             <input class="form-contacts__input" type="email" name="contacts-email" id="contacts-email"
-              placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+              placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
           </p>
         </fieldset>
         <fieldset class="form-impression review-form__impression">
