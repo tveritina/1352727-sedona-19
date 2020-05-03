@@ -33,20 +33,10 @@
 
 @media (min-width: @tablet-width) {
   .navigation {
+    background: @color-white;
+
     width: @tablet-width;
     min-height: 56px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .navigation {
-    width: @desktop-width;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .navigation {
-    background: @color-white;
   }
 
   .navigation__list {
@@ -77,6 +67,38 @@
 
     a {
       color: @color-black;
+
+      &:hover,
+      &:focus {
+        color: @color-blue;
+      }
+
+      &:active {
+        color: @color-black;
+        opacity: 30%;
+      }
     }
+  }
+
+  .navigation__item--active {
+    a {
+      color: @color-active;
+
+      &:hover,
+      &:focus {
+        color: @color-active-hover;
+      }
+
+      &:active {
+        color: @color-active;
+        opacity: 30%;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation {
+    width: @desktop-width;
   }
 }
