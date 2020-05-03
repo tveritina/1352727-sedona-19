@@ -1,9 +1,9 @@
 .navigation {
-  background: #81b3d2;
   text-transform: uppercase;
   margin: 0 auto;
   width: 320px;
   min-height: 220px;
+  background-color: @color-blue;
 }
 
 .navigation__item {
@@ -20,6 +20,11 @@
     color: @color-white;
     text-decoration: none;
   }
+}
+
+.navigation__item:active {
+  background-color: #669ec0;
+  opacity: 30%;
 }
 
 .navigation__list {
