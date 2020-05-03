@@ -1,25 +1,39 @@
 .popups {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
-  justify-content: center;
+  text-align: center;
   max-width: 320px;
+  background-color: @color-white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   position: relative;
-  padding-top: 20px;
+  padding-top: 62px;
   box-sizing: border-box;
 }
 
 .popups--error {
+  min-width: 320px;
   min-height: 280px;
-  display: none;
 }
 
 .popups--sent {
+  min-width: 320px;
   min-height: 323px;
   border-bottom: 100px solid @color-grey-form;
+}
+
+.popups-container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.popups-show {
+  display: flex;
 }
 
 .popups__container {
@@ -58,18 +72,19 @@
   height: 58px;
   position: absolute;
   bottom: -80px;
+  left: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .popups--error {
-    max-width: 400px;
+    min-width: 400px;
     min-height: 347px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .popups--sent {
-    max-width: 640px;
+    min-width: 640px;
     min-height: 347px;
     border-bottom: 146px solid @color-grey-form;
   }
@@ -77,6 +92,7 @@
   .popups__button-send {
     width: 458px;
     bottom: -110px;
+    left: 90px;
   }
 
   .popups__button-ok {

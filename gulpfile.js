@@ -81,6 +81,13 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy_modules", function () {
+  return gulp.src([
+    "node_modules/svg4everybody/dist/svg4everybody.min.js"
+  ])
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -88,6 +95,7 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "copy_modules",
   "css",
   "sprite",
   "html"
