@@ -37,6 +37,14 @@
   border-radius: 50%;
 }
 
+.form-impression__lable:hover::before {
+  background-color: @color-grey-form-hover;
+}
+
+.form-impression__lable:active::before {
+  background-color: @color-radio-active;
+}
+
 .form-impression__input:checked + .form-impression__lable::after {
   content: "";
   position: absolute;
@@ -46,4 +54,8 @@
   height: 16px;
   background-color: @color-grey;
   border-radius: 50%;
+}
+
+.form-impression__lable:active::after {
+  opacity: 30%;
 }
