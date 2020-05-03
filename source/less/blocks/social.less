@@ -16,6 +16,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color: @color-blue-hover;
+  }
+
+  &:active {
+    background-color: @color-blue-active;
+  }
+
+  &:active svg {
+    opacity: 30%;
+  }
 }
 
 .social__icon-twitter {
