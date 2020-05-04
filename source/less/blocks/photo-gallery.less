@@ -3,11 +3,26 @@
   flex-wrap: wrap;
   max-width: 280px;
   margin: 0 auto;
+  margin-top: 5px;
+}
+
+.photo-gallery__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 22px;
+}
+
+.photo-gallery__item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: @tablet-width) {
   .photo-gallery {
     max-width: 648px;
+  }
+
+  .photo-gallery__item {
+    border: none;
+    padding: 0;
   }
 }
 
