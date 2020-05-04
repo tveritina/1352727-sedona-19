@@ -21,6 +21,14 @@
   padding-top: 25px;
 }
 
+.reasons__item--grey:not(:last-child)::after {
+  content: "";
+  width: 280px;
+  height: 1px;
+  opacity: 0.1;
+  background-color: @color-black;
+}
+
 .reasons ol,
 .reasons ul {
   list-style: none;
