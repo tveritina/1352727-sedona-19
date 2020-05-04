@@ -62,13 +62,31 @@
     min-height: 330px;
   }
 
+  .advantages__text {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .advantages__header {
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 15px;
+  }
+
   .advantages__item {
     max-width: 256px;
-    min-height: 252px;
+    min-height: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
+  }
+
+  .advantages__item:nth-child(2) {
+    order: 1;
   }
 
   .advantages__icon-eat,
@@ -76,12 +94,12 @@
   .advantages__icon-souveniers {
     position: relative;
     left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 
   .advantages__icon-home {
     width: 75px;
-    height: 72px;
+    height: 75px;
   }
 
   .advantages__icon-souveniers {
@@ -91,7 +109,7 @@
 
   .advantages__icon-eat {
     width: 77px;
-    height: 68px;
+    height: 75px;
   }
 }
 
