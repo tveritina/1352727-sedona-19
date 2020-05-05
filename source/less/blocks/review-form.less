@@ -29,7 +29,8 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .review-form fieldset {
@@ -38,10 +39,27 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
+  position: relative;
 
   input {
     background-color: @color-grey-form;
     border: none;
+  }
+
+  &:not(:nth-child(5))::after {
+    content: "";
+    background-color: rgba(1, 1, 1, 0.1);
+    height: 1px;
+    width: 320px;
+  }
+
+  &:nth-child(1)::before {
+    content: "";
+    background-color: rgba(1, 1, 1, 0.1);
+    height: 1px;
+    width: 320px;
+    position: absolute;
+    top: 5px;
   }
 }
 
@@ -54,6 +72,16 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 648px;
+  }
+
+  .review-form fieldset {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   .review-form__impression {
