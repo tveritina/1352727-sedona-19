@@ -74,16 +74,54 @@
   .form-places__list {
     display: flex;
     justify-content: space-around;
+    position: relative;
     flex-wrap: wrap;
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -79px;
+      left: -71px;
+      width: 125px;
+      height: 1px;
+      background-color: rgba(1, 1, 1, 0.1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -79px;
+      right: -71px;
+      width: 125px;
+      height: 1px;
+      background-color: rgba(1, 1, 1, 0.1);
+    }
   }
 
   .form-places__list-item:nth-child(odd) {
-    margin-right: 70px;
+    margin-right: 97px;
+    margin-left: 85px;
   }
 
   .form-places__list-item {
     padding-left: 0;
+    width: 150px;
+    margin-bottom: 65px;
+  }
+
+  .form-places__input + .form-places__lable::before {
+    width: 55px;
+    height: 55px;
+  }
+
+  .form-places__input:checked + .form-places__lable::after {
+    top: 7px;
+    left: -50px;
+  }
+
+  .form-places__lable {
+    padding-left: 15px;
   }
 }
