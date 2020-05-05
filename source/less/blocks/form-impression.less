@@ -63,9 +63,21 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form-impression__list::after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: -95px;
+    height: 292px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
   .form-impression__list {
+    position: relative;
     margin-top: 20px;
-}
+  }
+
   .form-impression__list-item {
     margin-left: 10px;
     margin-bottom: 50px;
