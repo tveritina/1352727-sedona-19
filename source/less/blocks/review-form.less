@@ -74,12 +74,15 @@
 
 .review-form__button {
   width: 280px;
-  margin-bottom: 50px;
 }
 
 .review-form__contacts .review-form__legend,
 .review-form__emotions .review-form__legend {
   padding-bottom: 20px;
+}
+
+.review-form__footer {
+  margin-bottom: 50px;
 }
 
 @media (min-width: @tablet-width) {
@@ -154,6 +157,33 @@
   .review-form__emotions {
     order: 5;
     min-width: 648px;
+
+    .review-form__legend {
+      padding-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .review-form__emotions span {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 0;
+      width: 125px;
+      height: 1px;
+      background-color: rgba(1, 1, 1, 0.1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: rgba(1, 1, 1, 0.1);
+    }
   }
 
   .review-form__footer {
@@ -161,6 +191,7 @@
     width: 648px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 85px;
   }
 
   .review-form__button {
