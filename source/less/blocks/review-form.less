@@ -47,7 +47,7 @@
     border: none;
   }
 
-  &:not(:nth-child(5))::after {
+  &::after {
     content: "";
     background-color: rgba(1, 1, 1, 0.1);
     height: 1px;
@@ -69,6 +69,7 @@
 
 .review-form__button {
   width: 280px;
+  margin-bottom: 55px;
 }
 
 @media (min-width: @tablet-width) {
