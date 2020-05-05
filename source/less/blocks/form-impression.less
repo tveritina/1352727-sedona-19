@@ -83,3 +83,31 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .form-impression__list-item {
+    margin-left: 0;
+    margin-bottom: 52px;
+    padding-left: 72px;
+  }
+
+  .form-impression {
+    width: 480px;
+  }
+
+  .form-impression__input + .form-impression__lable::before {
+    left: -70px;
+    top: -11px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .form-impression__input:checked + .form-impression__lable::after {
+    top: 5px;
+    left: -54px;
+  }
+  .form-impression__list::after {
+    right: 4px;
+    top: -95px;
+  }
+}

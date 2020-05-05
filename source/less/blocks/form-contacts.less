@@ -99,3 +99,25 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .form-contacts__field {
+    max-width: 480px;
+    display: inline;
+  }
+
+  .form-contacts__lable::after {
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -19px;
+    right: 0;
+  }
+
+  .hidden-on-desktop {
+    display: none;
+  }
+}
