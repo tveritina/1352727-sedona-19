@@ -150,7 +150,7 @@
 
     .review-form__legend {
       width: 280px;
-      padding-top: 22px;
+      padding-top: 25px;
       padding-left: 0;
     }
   }
@@ -243,6 +243,7 @@
 
   .review-form__footer {
     width: 960px;
+    margin-bottom: 90px;
   }
 
   .review-form__legend {
@@ -264,5 +265,27 @@
   .review-form__impression .review-form__legend {
     padding-right: 60px;
     padding-bottom: 55px;
+  }
+
+  .review-form__emotions .review-form__legend {
+    padding-top: 17px;
+  }
+
+  .review-form__places .review-form__legend {
+      padding-bottom: 57px;
+  }
+
+  .review-form__emotions span {
+    &::before {
+      top: 32px;
+      left: 0;
+      width: 280px;
+    }
+
+    &::after {
+      top: 32px;
+      right: 0;
+      width: 280px;
+    }
   }
 }
