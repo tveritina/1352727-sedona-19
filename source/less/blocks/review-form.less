@@ -1,14 +1,19 @@
 .review-form {
   max-width: 280px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .review-form input {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.review-form input::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
 }
 
 .review-form .review-form-error {
@@ -28,6 +33,7 @@
 }
 
 .review-form__legend {
+  width: 100%;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -62,15 +68,6 @@
     top: 5px;
     left: -20px;
   }
-
-  &:nth-child(1)::before {
-    content: "";
-    background-color: rgba(1, 1, 1, 0.1);
-    height: 1px;
-    width: 320px;
-    position: absolute;
-    top: 5px;
-  }
 }
 
 .review-form__button {
@@ -83,7 +80,7 @@
 }
 
 .review-form__footer {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 @media (min-width: @tablet-width) {
@@ -91,6 +88,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 648px;
+    margin: 0 auto;
   }
 
   .review-form fieldset {
