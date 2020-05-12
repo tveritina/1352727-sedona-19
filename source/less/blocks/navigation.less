@@ -52,7 +52,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-shadow: none;
   }
 
@@ -65,7 +65,6 @@
   }
 
   .navigation__item {
-    flex-direction: row;
     min-width: 153px;
 
     .block-header();
@@ -110,19 +109,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .navigation__item {
+    min-width: 239px;
+  }
+
   .navigation {
     width: @desktop-width;
   }
 
-  .navigation__list {
-    justify-content: space-around;
-  }
-
-  .navigation__list li:nth-child(2) {
+   .navigation__list li:nth-child(4n+2) {
     padding-right: 110px;
   }
 
-  .navigation__list li:nth-child(3) {
+  .navigation__list li:nth-child(4n+3) {
     padding-left: 130px;
   }
 }
