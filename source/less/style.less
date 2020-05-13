@@ -27,50 +27,6 @@
 @import "blocks/photo-gallery.less";
 @import "blocks/required-fields.less";
 @import "blocks/popups.less";
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: @font-PTSans;
-  color: @color-black;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.main-container {
-  width: 320px;
-  margin: 0 auto;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@media (min-width: @tablet-width) {
-  .main-container {
-    min-width: @tablet-width;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-container {
-    min-width: @desktop-width;
-  }
-}
+@import "global.less";
+@import "fonts.less";
+@import "blocks/main-container.less";
