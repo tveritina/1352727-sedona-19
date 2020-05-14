@@ -3,9 +3,24 @@ body {
   padding: 0;
   font-family: @font-PTSans;
   color: @color-black;
+  max-width: 320px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    max-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    max-width: @desktop-width;
+  }
 }
