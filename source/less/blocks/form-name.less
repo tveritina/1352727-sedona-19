@@ -10,11 +10,20 @@
   margin-right: 10px;
 }
 
-.form-name__input {
+.form-name__input,
+.form-name__input::placeholder  {
   .input-black-text();
   width: 100%;
   height: 58px;
   min-width: 100px;
+}
+
+.form-name__input::-ms-input-placeholder {
+  .input-black-text();
+}
+
+.form-name__input:focus::placeholder {
+  color: transparent;
 }
 
 .form-name__field {
