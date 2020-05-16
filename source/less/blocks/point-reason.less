@@ -16,8 +16,6 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 27px;
-  padding-right: 27px;
 }
 
 .point-reason h3 {
@@ -26,18 +24,18 @@
 
 .point-reason__image {
   width: 100%;
-  height: 260px;
+  height: auto;
   overflow: hidden;
 
   .point-reason__background {
-    height: 260px;
+    height: auto;
     width: 100%;
   }
 }
 
 .point-reason .point-reason__header {
   .block-header();
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .point-reason__number,
@@ -56,6 +54,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.point-reason:nth-child(2)  .point-reason__image {
+  background-color: #efefef;
 }
 
 @media (min-width: @tablet-width) {
@@ -85,7 +87,7 @@
   .point-reason__description {
     width: 100%;
     max-width: 256px;
-    min-height: 255px;
+    min-height: 256px;
     padding-left: 47px;
     padding-right: 47px;
     box-sizing: border-box;
