@@ -9,13 +9,13 @@
 
 .point-reason__description {
   min-height: 110px;
-  max-width: 280px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   padding-left: 27px;
   padding-right: 27px;
 }
@@ -25,13 +25,19 @@
 }
 
 .point-reason__image {
-  width: 320px;
+  width: 100%;
   height: 260px;
   overflow: hidden;
+
+  .point-reason__background {
+    height: 260px;
+    width: 100%;
+  }
 }
 
-.point-reason__header {
+.point-reason .point-reason__header {
   .block-header();
+  margin-bottom: 10px;
 }
 
 .point-reason__number,
@@ -40,8 +46,12 @@
   margin: 0;
 }
 
+.point-reason .point-reason__number {
+  margin-bottom: 15px;
+}
+
 .text-wrapper {
-  max-width: 280px;
+  max-width: 250px;
   min-height: 110px;
   display: flex;
   flex-direction: column;
@@ -54,9 +64,13 @@
     flex-direction: row;
   }
 
-  .point-reason__header {
+  .point-reason .point-reason__header {
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .point-reason .main-container {
+    width: 100%;
   }
 
   .point-reason__image {
@@ -64,18 +78,18 @@
     height: 256px;
   }
 
-  .point-reason__number {
-    margin-bottom: 10px;
+  .point-reason .point-reason__number {
+    margin-bottom: 25px;
   }
 
   .point-reason__description {
     width: 100%;
     max-width: 256px;
-    min-height: 163px;
+    min-height: 255px;
     padding-left: 47px;
     padding-right: 47px;
     box-sizing: border-box;
-    padding-top: 0;
+    padding-top: 41px;
     padding-bottom: 0;
   }
 
@@ -84,6 +98,10 @@
     max-width: 158px;
     margin: 0 auto;
     min-height: 165px;
+  }
+
+  .point-reason:nth-child(4) .text-wrapper {
+    max-width: 150px;
   }
 }
 
@@ -95,7 +113,8 @@
 
   .point-reason__description {
     max-width: 400px;
-    min-height: 150px;
+    min-height: 256px;
+    padding-top: 50px;
   }
 
   .point-reason__description .point-reason__text {
@@ -115,7 +134,11 @@
     min-height: 165px;
   }
 
-  .point-reason__header {
+  .point-reason:nth-child(4) .text-wrapper {
+    max-width: 285px;
+  }
+
+  .point-reason .point-reason__header {
     padding: 0 65px;
   }
 

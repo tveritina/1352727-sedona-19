@@ -26,11 +26,14 @@
         <li class="navigation__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
       </ul>
     </nav>
-    <button type="button" class="close-button page-header__close-button visually-hidden" aria-label="Закрыть"></button>
-    <div class="page-header__logotype">
-      <button class="burger-button page-header__burger-button visually-hidden" type="button"
-        aria-label="Открыть меню"></button>
-      <a href="#" class="logo page-header__logo"></a>
+    <div class="main-container">
+      <button type="button" class="close-button page-header__close-button visually-hidden"
+        aria-label="Закрыть"></button>
+      <div class="page-header__logotype">
+        <button class="burger-button page-header__burger-button visually-hidden" type="button"
+          aria-label="Открыть меню"></button>
+        <a href="#" class="logo page-header__logo"></a>
+      </div>
     </div>
     <div class="page-header__background page-header__background--index">
       <img src="img/text-sedona-index.svg" width="320" height="389"
@@ -47,32 +50,34 @@
       <img class="page-description__triangle" src="img/bg-triangle.svg" width="320" height="37" alt="Седона">
     </section>
     <section class="reasons">
-      <div class="main-container">
-        <h2 class="visually-hidden">Преимущества городка Седона</h2>
-        <ol class="reasons-container">
-          <li class="point-reason reasons__item reasons__item--blue">
-            <div class="point-reason__description">
+      <h2 class="visually-hidden">Преимущества городка Седона</h2>
+      <ol class="reasons-container">
+        <li class="point-reason reasons__item">
+          <div class="point-reason__description reasons__item--blue">
+            <div class="main-container">
               <h3 class="point-reason__header">настоящий городок</h3>
               <p class="point-reason__number">— №1 —</p>
               <p class="point-reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="point-reason__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/main-city-desktop@2x.webp 2x, img/main-city-desktop@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/main-city-tablet@2x.webp 2x, img/main-city-tablet@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/main-city-mobile@2x.webp 2x, img/main-city-mobile@1x.webp 1x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/main-city-desktop@2x.jpg 2x, img/main-city-desktop@1x.jpg 1x">
-                <source media="(min-width: 768px)"
-                  srcset="img/main-city-tablet@2x.jpg 2x, img/main-city-tablet@1x.jpg 1x">
-                <source media="(min-width: 320px)"
-                  srcset="img/main-city-mobile@2x.jpg 2x, img/main-city-mobile@1x.jpg 1x">
-                <img class="point-reason__background" src="img/main-city-desktop@2x.jpg" alt="Настоящий городок">
-              </picture>
-            </div>
+          </div>
+          <div class="point-reason__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/main-city-desktop@2x.webp 2x, img/main-city-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/main-city-tablet@2x.webp 2x, img/main-city-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 320px)"
+                srcset="img/main-city-mobile@2x.webp 2x, img/main-city-mobile@1x.webp 1x">
+              <source media="(min-width: 1200px)"
+                srcset="img/main-city-desktop@2x.jpg 2x, img/main-city-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)"
+                srcset="img/main-city-tablet@2x.jpg 2x, img/main-city-tablet@1x.jpg 1x">
+              <source media="(min-width: 320px)"
+                srcset="img/main-city-mobile@2x.jpg 2x, img/main-city-mobile@1x.jpg 1x">
+              <img class="point-reason__background" src="img/main-city-desktop@2x.jpg" alt="Настоящий городок">
+            </picture>
+          </div>
+          <div class="main-container">
             <ul class="advantages point-reason__details">
               <li class="advantages__item">
                 <svg class="advantages__icon-home" width="75" height="72">
@@ -96,54 +101,56 @@
                 <p class="advantages__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
               </li>
             </ul>
-          </li>
-          <li class="point-reason reasons__item reasons__item--blue">
-            <div class="point-reason__description">
+          </div>
+        </li>
+        <li class="point-reason reasons__item">
+          <div class="point-reason__description reasons__item--blue">
+            <div class="main-container">
               <h3 class="point-reason__header">там есть мост&nbsp;дьявола</h3>
               <p class="point-reason__number">— №2 —</p>
               <p class="point-reason__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
             </div>
-            <div class="point-reason__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/main-bridge-desktop@2x.webp 2x, img/main-bridge-desktop@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/main-bridge-tablet@2x.webp 2x, img/main-bridge-tablet@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/main-bridge-mobile@2x.webp 2x, img/main-bridge-mobile@1x.webp 1x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/main-bridge-desktop@2x.jpg 2x, img/main-bridge-desktop@1x.jpg 1x">
-                <source media="(min-width: 768px)"
-                  srcset="img/main-bridge-tablet@2x.jpg 2x, img/main-bridge-tablet@1x.jpg 1x">
-                <source media="(min-width: 320px)"
-                  srcset="img/main-bridge-mobile@2x.jpg 2x, img/main-bridge-mobile@1x.jpg 1x">
-                <img class="point-reason__background" src="img/main-bridge-desktop@2x.jpg" alt="Мост">
-              </picture>
-            </div>
-          </li>
-          <li class="point-reason reasons__item reasons__item--grey reasons__item--width">
-            <div class="text-wrapper">
-              <h3 class="point-reason__header">небольшая площадь</h3>
-              <p class="point-reason__number">— №3 —</p>
-              <p class="point-reason__text">все интересные места находятся очень близко</p>
-            </div>
-          </li>
-          <li class="point-reason reasons__item reasons__item--grey reasons__item--width">
-            <div class="text-wrapper">
-              <h3 class="point-reason__header">красивая дорога</h3>
-              <p class="point-reason__number">— №4 —</p>
-              <p class="point-reason__text">ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
-            </div>
-          </li>
-          <li class="point-reason reasons__item reasons__item--grey reasons__item--width">
-            <div class="text-wrapper">
-              <h3 class="point-reason__header">мало туристов</h3>
-              <p class="point-reason__number">— №5 —</p>
-              <p class="point-reason__text">большинство едет в гранд каньон и толпится там</p>
-            </div>
-          </li>
-        </ol>
-      </div>
+          </div>
+          <div class="point-reason__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/main-bridge-desktop@2x.webp 2x, img/main-bridge-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/main-bridge-tablet@2x.webp 2x, img/main-bridge-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 320px)"
+                srcset="img/main-bridge-mobile@2x.webp 2x, img/main-bridge-mobile@1x.webp 1x">
+              <source media="(min-width: 1200px)"
+                srcset="img/main-bridge-desktop@2x.jpg 2x, img/main-bridge-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)"
+                srcset="img/main-bridge-tablet@2x.jpg 2x, img/main-bridge-tablet@1x.jpg 1x">
+              <source media="(min-width: 320px)"
+                srcset="img/main-bridge-mobile@2x.jpg 2x, img/main-bridge-mobile@1x.jpg 1x">
+              <img class="point-reason__background" src="img/main-bridge-desktop@2x.jpg" alt="Мост">
+            </picture>
+          </div>
+        </li>
+        <li class="point-reason reasons__item reasons__item--grey reasons__item--width">
+          <div class="text-wrapper">
+            <h3 class="point-reason__header">небольшая площадь</h3>
+            <p class="point-reason__number">— №3 —</p>
+            <p class="point-reason__text">все интересные места находятся очень близко</p>
+          </div>
+        </li>
+        <li class="point-reason reasons__item reasons__item--grey reasons__item--width">
+          <div class="text-wrapper">
+            <h3 class="point-reason__header">красивая дорога</h3>
+            <p class="point-reason__number">— №4 —</p>
+            <p class="point-reason__text">ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
+          </div>
+        </li>
+        <li class="point-reason reasons__item reasons__item--grey reasons__item--width">
+          <div class="text-wrapper">
+            <h3 class="point-reason__header">мало туристов</h3>
+            <p class="point-reason__number">— №5 —</p>
+            <p class="point-reason__text">большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </li>
+      </ol>
     </section>
     <section class="find-hotel">
       <div class="text-wrapper">

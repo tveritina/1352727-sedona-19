@@ -3,10 +3,9 @@ body {
   padding: 0;
   font-family: @font-PTSans;
   color: @color-black;
-  max-width: 320px;
   overflow-x: hidden;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  min-width: 320px;
 }
 
 img {
@@ -17,6 +16,7 @@ img {
 @media (min-width: @tablet-width) {
   body {
     max-width: @tablet-width;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
   }
 }
 
